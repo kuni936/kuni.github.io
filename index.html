@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>kuniのポートフォリオ</title>
-  </head>
-  <body>
-    <h1>kuni</h1>
-    
-    <h2>About</h2>
-    <p>
-      簡単な自己紹介やアピール。<br>
-      木工などでのDIYが得意です。現在はPythonを勉強したいと考えており、スマート農業を実施したいなと考えています。
-    </p>
+    <title>kuni's Portfolio | DIY & Adventure</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>kuni's Adventure & Innovation</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">自己紹介</a></li>
+                    <li><a href="#skills">スキル・目標</a></li>
+                    <li><a href="#trips">旅の記録</a></li>
+                    <li><a href="#contact">コンタクト</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h3>Profile</h3>
-    <ul>
-      <li>kuni</li>
-      <li>愛知県</li>
-      <li>DIYなど</li>
-    </ul>
+    <main>
+        <section id="about">
+            <h2><span class="icon">💡</span> 自己紹介 (About Me)</h2>
+            <div class="profile-card">
+                <p><strong>名前:</strong> kuni</p>
+                <p><strong>年齢:</strong> 18歳</p>
+                <p class="intro-text">
+                    DIYと旅を愛する18歳。手を動かしてモノを作る喜びと、未踏の地を自分の力で巡る冒険心を持ち合わせています。将来は、この経験とPythonの知識を活かし、革新的なスマート農業で起業を目指しています。
+                </p>
+            </div>
+        </section>
 
-    <h3>Skills</h3>
-    <table>
-      <tr>
-        <th>OS</th>
-        <td>Windows, Ubuntu など</td>
-      </tr>
-      <tr>
-        <th>Engine, Forks</th>
-        <td>Node.js, Express など</td>
-      </tr>
-      <tr>
-        <th>Tool, MiddleWare</th>
-        <td>Git, PostgreSQL など</td>
-      </tr>
-      <tr>
-        <th>資格・免許</th>
-        <td>情報処理技術者、LPIC など</td>
-      </tr>
-    </table>
+        <section id="skills">
+            <h2><span class="icon">🛠️</span> スキルと目標 (Skills & Goals)</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>DIY・モノづくり</h3>
+                    <p>日常的な修理から、趣味のための電子工作・木工まで、幅広く挑戦しています。特に、農業関連の装置を自作することに関心があります。</p>
+                </div>
+                <div class="skill-item">
+                    <h3>学習中の技術</h3>
+                    <ul>
+                        <li>**Python**：スマート農業のデータ分析、自動制御システム開発のために学習中。</li>
+                        <li>HTML/CSS：このポートフォリオを通じてWeb技術の基礎を習得。</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>将来の目標</h3>
+                    <p class="goal-text">
+                        **スマート農業での起業**。<br>
+                        DIYの知見とPythonによるデータ処理を組み合わせ、効率的で持続可能な農業システムを実現したい。
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <h3>Works</h3>
-    <p>アピールできる活動内容を書きましょう。</p>
-    <ul>
-      <li><a href="https://github.com/">GitHub</a></li>
-      <li><a href="https://qiita.com/">Qiita</a></li>
-      <li><a href="https://zenn.dev/">Zenn</a></li>
-      <li>
-        作った作品
-        <ul>
-          <li><a href="https://example.com/">作品 1</a></li>
-          <li><a href="https://example.com/">作品 2</a></li>
-        </ul>
-      </li>
-    </ul>
+        <section id="trips">
+            <h2><span class="icon">🏍️</span> 旅の記録 (Travel Log)</h2>
+            
+            <h3>国内：バイクと車で巡る日本縦断</h3>
+            <p>高校時代からの趣味。バイクでの単独全国旅を経て、現在は車で各地を巡り、日本の多様な自然や文化に触れています。</p>
+            <div class="photo-gallery">
+                <figure>
+                    <img src="japan_trip_01.jpg" alt="日本の旅 - 海岸線の写真" class="gallery-photo">
+                    <figcaption>日本旅の風景 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="japan_trip_02.jpg" alt="日本の旅 - 峠での休憩写真" class="gallery-photo">
+                    <figcaption>日本旅の風景 2</figcaption>
+                </figure>
+                </div>
 
-    <h3>Contact</h3>
-    <p>連絡先や SNS のアカウントを書きましょう。</p>
-    <ul>
-      <li><a href="mailto:name@example.com">Mail</a></li>
-      <li><a href="https://twitter.com/n_yobikou">X(旧 Twitter)</a></li>
-      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-    </ul>
+            <h3>海外：訪問国ギャラリー</h3>
+            <p>フランス、ベルギー、マレーシアへの渡航経験があり、異文化に触れることで視野を広げています。</p>
+            <div class="photo-gallery">
+                <figure>
+                    <img src="france_01.jpg" alt="フランスでの写真" class="gallery-photo">
+                    <figcaption>フランスの街並み</figcaption>
+                </figure>
+                <figure>
+                    <img src="malaysia_01.jpg" alt="マレーシアでの写真" class="gallery-photo">
+                    <figcaption>マレーシアの熱気</figcaption>
+                </figure>
+                <figure>
+                    <img src="belgium_01.jpg" alt="ベルギーでの写真" class="gallery-photo">
+                    <figcaption>ベルギーの風景</figcaption>
+                </figure>
+            </div>
+        </section>
 
-    <h3>History</h3>
-    <p>学歴、職歴、アルバイト、インターン経験など。</p>
-    <table>
-      <tr>
-        <th>2019 年</th>
-        <td><a href="https://dwango.co.jp/">株式会社ドワンゴ</a> 入社</td>
-      </tr>
-      <tr>
-        <th>2018 年</th>
-        <td>学校法人角川ドワンゴ学園 <a href="https://nnn.ed.jp/">N高等学校</a> 卒業</td>
-      </tr>
-      <tr>
-        <th>20XX 年</th>
-        <td>表彰、受賞歴、メディア掲載記事などあれば</td>
-      </tr>
-    </table>
-  </body>
+        <section id="contact">
+            <h2><span class="icon">📧</span> コンタクト (Contact)</h2>
+            <p>お問い合わせやプロジェクトへの協力のご提案など、お気軽にご連絡ください。</p>
+            <ul>
+                <li>Mail: <a href="mailto:your_email@example.com">your_email@example.com</a></li>
+                <li>GitHub: <a href="https://github.com/yourname">github.com/yourname</a></li>
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 kuni's Portfolio</p>
+    </footer>
+</body>
 </html>
